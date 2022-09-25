@@ -1,0 +1,1385 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+margin: 0;
+padding:0;
+/*border:none;*/
+/*box-sizing: border-box;*/
+}
+
+
+/* notes*/
+
+main{
+    padding:20px;
+    
+    /*padding:20px 		               oben/unten/links/rechts
+    padding:20px 0 		               oben/unten, links/rechts
+    padding:20px 0  10px               oben,links/rechts, unten
+    padding:20px 19px 18px  17px       oben, rechts, unten, links
+    */
+    
+    }
+
+/* If we can add margin to span element we should add display:block or display:inline-block;.*/
+
+/*----- notes end ---*/
+
+body{
+font-family: open sans, sans-serif;
+font-weight: 300;
+color:#3a3a3a;
+
+}
+
+/* ----- basic layout config -------*/
+
+.innerbox {
+    max-width: 960px;
+    margin: 0 auto; 
+    position: relative;  /* relative = como o Eltern Element*/
+    padding:0 2%;
+    border:2px solid yellow;
+  }
+
+
+  /* ---- section configuration -----*/
+  section{       border:1px solid #f0f;     }
+ 
+  section .innerbox, footer .innerbox {
+  padding:30px 1%;    /* oben/unten, links/rechts */   
+ /* padding:16px 1%  30px;           /*   top, right_left,  */
+  border:1px solid orangered; 
+  } 
+
+  .section-inner{
+    border:1px solid #f0f;   
+    margin-left:10px;
+	padding:20px;
+
+  }
+  
+  
+  
+  section .innerbox,
+  #schnellkontakt .innerbox,
+  footer .innerbox {
+    /*padding:50px 2%;*/
+  /*  border:1px solid #f00; */
+  } 
+  
+
+  hr.hr-style{
+ margin-bottom:20px;  
+  }
+
+  .hr-style{
+  /* border: 1px solid #a3d6a7; green */
+    border: 1px solid; 
+	border-color: rgba(2,100,111,0.5);   
+    width: 5%;  
+    border-width: 2px; 
+  }
+
+  .hr-style:hover{
+  	 border-color: rgba(2,100,111,0.93);   
+    -webkit-transition: all 0.2s ease-in-out 0.2s;
+    -moz-transition: all 0.2s ease-in-out  0.2s;
+    -ms-transition: all 0.2s ease-in-out  0.2s;
+    -o-transition: all 0.2s ease-in-out  0.2s;
+    transition: all 0.2s ease-in-out  0.2s;	
+  }
+
+   /*--- end of section config ---*/
+
+
+
+
+/*   ---- basic layout config end ------*/
+
+
+
+
+
+h1,h2,h3,h4{
+/* font-family: roboto, sans-serif; */
+font-family: Quicksand, sans-serif;
+letter-spacing:1px;
+/*color:#252525;*/
+color:#4B535E;
+}
+
+h1{
+   /* font-size: ;
+    font-weight: ; */
+}
+
+h2{
+    padding-bottom: 7px;
+    font-size: 24px;
+    font-weight:500 ;
+    text-transform: capitalize;
+    }
+
+    h3{
+        font-weight:400 ;
+
+    }
+
+    p {
+        /* text-indent: 1em;*/
+        text-align: justify;
+        text-transform: capitalize; 
+       color:#2d2d2d;	
+       color:rgba(45,45,45,0.9);	/*  changed the intensity to 0.5 */
+       font-weight: 400;
+       }
+     
+		   
+	section p{      /* set space between paragraphs*/
+		line-height:22px;	
+		margin:10px 0;
+		}
+
+	   
+     ul{
+      list-style-type:none;  /*romoves BULLETS from *All* ul li */	
+			}
+
+    
+    a{
+        text-decoration:none;  /*romove underline of anchor text*/	
+        }
+        
+.anchor-text{
+color: rgb(2, 100, 111, 1);     
+font-weight: 600;
+}
+.anchor-text:hover{
+ /*    color:#4AAF52; green */
+ color:#2d2d2d;
+    text-decoration: underline;
+    -webkit-transition: all 0.2s ease-in-out 0.2s;
+       -moz-transition: all 0.2s ease-in-out  0.2s;
+       -ms-transition: all 0.2s ease-in-out  0.2s;
+       -o-transition: all 0.2s ease-in-out  0.2s;
+       transition: all 0.2s ease-in-out  0.2s;		
+   }
+    
+}
+
+/* background-color for sections*/
+	.blue{
+		background-color:rgba(2, 100, 111,1);
+		background-color:#02646E;
+	}
+
+	.light-gray{
+	background-color: rgb(231, 234,244, 1);
+	}
+
+
+  .light-blue{
+   /* background-color: rgb(91, 155,162, 0.03);*/
+ background-color: rgb(250, 252,252, 0.7); /*#fafcfc*/
+    }
+    
+   .dark-gray{
+    background:#737373;
+    background:rgba(115,115,115,1);	
+        }
+		
+	.dark{
+    background:#2d2d2d;
+	}
+
+	
+
+
+
+    /*% columns*/
+
+    .one-third{
+        width:28%;
+        float:left;	
+        margin-right:2%;
+       
+        }
+    .half{
+        width:48%;
+        float:left;	
+        margin-right:1%;
+        border:1px solid blueviolet;
+        }
+
+     
+               
+
+    .two-thirds{
+        width:64%;
+        float:left;	
+        margin-right:2%;	
+
+            }
+
+
+/* ---- navigation links ---- */
+
+
+.div-logo{
+    width:25%;
+    line-height: 23px;
+    float:left;	
+    margin-right:1%;
+    clear:both;
+    border:1px solid blueviolet;
+	margin-top:0;
+	margin-bottom:0;
+
+}
+
+
+
+
+/*  img with automatic center*/
+.logo-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    max-width: 40px;
+	opacity:0.5;
+}
+
+header:hover .logo-image img{  
+opacity:1;	
+}
+
+
+
+#logo-name h1{
+    font-size:110%; 
+    text-align: center;
+	font-family: roboto, sans-serif; 
+  }
+
+	
+		
+	a.active{
+    font-weight: 500;	
+    }
+
+	
+   #menu  a#active{
+    color:#02646E!important; 
+    font-weight: 500;	
+    }
+
+
+
+
+/*-----Drop down Menu-----*/	
+		
+
+
+nav#menu a.active, button.dropbtn.active{
+background-color:#02646F;
+color:#fff;	
+border-radius:1px;	
+padding: 11px 13px 12px 13px;  
+}
+	 
+
+nav#menu{   /* se nao definir o tamanho do menu2 a classe weiss defi*/
+width:100%; 
+float:right;
+margin-left:0;
+ text-transform:capitalize;  /*catilize: erste Bustabe immer groß, lowercase, uppercase, capitn*/  
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  float:right;    
+  margin-right:170px; 
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+  float: left;
+  display:inline-block;
+  color:#02646F;
+ /* color:rgba(57,54,43,1);*/
+  text-align: center;
+  padding: 8px 8px 12px 8px;   
+  margin-top:8px; 
+  text-decoration: none;
+  font-size: 15px;  
+  margin-right:0px; /* define distancia entre os elementos do menu2*/
+  margin-left: 0px;   /* define distancia entre os elementos do menu2*/
+}
+
+
+
+
+.dropdown a{
+  float: left;
+  display: block;
+  color:#02646F;
+/*color:#39362b;
+color:rgba(57,54,43,1); */
+  text-align: center;
+padding: 14px 16px;    
+
+  text-decoration: none;
+  font-size: 15px;  
+  margin-right:10px; /* define distancia entre os elementos do menu2*/
+  margin-left: 10px;   /* define distancia entre os elementos do menu2*/
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size:15.3px;
+  color:#02646F;
+  /*color:rgba(57,54,43,1); */
+  border: none;
+  outline: none;
+  padding: 18px 6px 12px 8px;    
+  margin-right:11px!important;  
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+ }
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  line-height:8px;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-weight:400;
+ 
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+   /*padding: 14px 16px;     original */
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+ font-size:15.3px;
+   font-weight:600;	
+ -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+ .topnav a:hover, .dropdown:hover .dropbtn  {
+
+  text-decoration:underline;  
+  
+}
+
+
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+background-color:#02646F;
+color:#fff;	
+border-radius:1px;	
+padding: 11px 13px 12px 13px;	
+font-size:15.3px;
+  font-weight:600;	
+  text-decoration:underline;
+-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */	
+/*.topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }*/
+  
+  .div-logo{
+	  display:none;
+  }
+
+   .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+
+  }
+  
+  
+  .topnav  a:first-child{
+	display:none;
+	/*background:#f0f;*/
+	  
+  }
+  
+	  
+  
+
+ .topnav a.icon {
+    float: right;
+    display: block;
+	font-size:2.6em;
+	
+  }
+}
+
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+
+ .div-logo{
+	  display:none;
+  }
+
+
+.topnav#myTopnav.responsive {
+padding-top:4.5em;
+ margin-right:10px; 
+/*background:#f0f; mangenta*/
+width:70%;
+}
+
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	
+  }
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	margin-left:0;	
+  }
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+/*- end drop down menu -*/
+
+
+
+
+
+    
+
+    /* --------heros -dentist------------*/
+    
+    /* ---1 - hero home-----*/
+   
+      
+     #hero-outer{
+        height:600px ; 
+        width: 100%;
+        overflow: hidden;     
+        position: relative;
+    }
+	
+	  #hero-image{
+        height:600px ; 
+        width: 100%;
+      background:url('../images/hero/2.png') no-repeat center center;   
+	 background-size:cover;   /* RESONSIVENESS image adjusts it self*/
+      
+}
+
+    /* ---- moto ------*/
+       span#moto{     
+     /*   font-family: oswald;  */
+        font-size:3.7em;
+        margin:0;	
+        position:absolute;
+        left:40%;
+        top:50%;
+        transform:translate(-50%,-50%);  	/* alinha imagem, block no ABSOLUTE MITTE   */
+        color:#fff;
+        text-align:center;
+        line-height:0.4em;
+		white-space:nowrap;  /* RESONSIVENESS do not colapse */
+        }
+        
+		
+	/* ---2 - hero sub pages-----*/
+
+ #hero-outer-subpage{
+    height:500px; 	 
+ }
+
+ #hero-image-implant{
+    height:500px ; 
+    width: 100%;
+  background:url('../images/sub-pages/hero-sub-page-1200x500.png') no-repeat center center;        
+    
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);  /* efect Black and white*/
+}
+	
+ #hero-image-implant-2{
+    height:500px ; 
+    width: 100%;
+  background:url('../images/sub-pages/hero-sub-page-1200x500.png') no-repeat center center;        
+    
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);  /* efect Black and white*/
+}
+			
+		
+
+    /* ------ btn --------*/
+    /* --- btn-hero ---*/
+    .btn-header{
+        /* background:#f0f;*/
+        position:absolute;	
+        top:90%;
+        left:40%;
+        transform:translate(-50%,-50%);	
+    
+    
+     }
+     
+      .btn-header ul li{
+    list-style-type:none;	
+    display:inline-block;      /* torna o bloco da  navigation  em um bloco-linha , diferente do display;block do Logo//*/		
+    }
+      
+      
+        .btn-header ul li a{       
+        border-radius:50px;
+        display:inline-block; /*  display: inline-block logo pode ter um padding */
+        padding:0.7em 1.5em;            
+        }
+
+        .btn-header-1 ul li a{       
+            border-radius:15px;
+            display:inline-block; /*  display: inline-block logo pode ter um padding */
+            padding:0.7em 1.5em;            
+            }
+    
+      
+     
+       .btn-header i{
+         padding-right:12px;  
+         font-size:25px;
+         color:#fff;
+       }
+         
+    .btn-header span{
+                color:#fff;
+       }
+
+       .btn-header ul li a:hover{
+        background-color:#02646E;
+        background-color:rgba (2,100,110,0.7);  
+        transition: all 0.2s 0.1s ease-in-out;
+        border:none;        
+       }
+
+		/* -----btn -------*/
+
+		  .btn ul li{
+    list-style-type:none;	
+    display:inline-block;      /* torna o bloco da  navigation  em um bloco-linha , diferente do display;block do Logo//*/		
+    }
+      
+      
+        .btn ul li a{       
+        border-radius:50px;
+        display:inline-block; /*  display: inline-block logo pode ter um padding */
+        padding:0.7em 1.5em;            
+        }
+
+  
+	   .book-now{
+        background-color: rgb(2, 100, 111, 0.7);          
+                           }
+	
+
+         /*buttom colors type */
+
+         .btn-header-blue ul li a{
+            background-color:#02646E;
+            background-color:rgba (2,100,110,0.7);  
+			
+               
+            }
+
+            .btn-header-white ul li a{
+                background-color:transparent;
+                border: 1px solid;     
+                border-color: rgba(255, 255, 255, .75);                
+                   
+                }
+    
+        /* end buttom colors type */
+       
+
+    
+    /* --- END btn-hero ---*/
+
+ 
+
+
+/* --- section-1   welcome -----*/
+	#welcome-1{
+    background-color: rgb(2, 100, 111, 0.7);  
+       }
+  
+
+	section#welcome > *{
+    text-align:center;
+     }
+  
+     #welcome-1 p{
+        text-align:center;
+         }
+		 
+	#welcome-1 h2{
+     font-family: roboto, sans-serif; 
+         }
+      
+      
+
+
+
+.container {
+    width: 100%;
+    padding:20px 0;
+    display:block;  
+
+}  
+    #welcome-1 > *{    /* to all children! */
+        color: #fff;
+    }
+
+    #welcome-1 span{
+    font-weight:500; 
+
+    }
+
+  
+    #message span{
+    color: rgb(74, 175, 82, 1);
+    /*color: rgb(2, 100, 111, 1);
+    color:#02646E; */
+    font-weight: 400;
+    }
+
+/* -- ---- services +svg.mini -----*/
+
+	
+    .flex-container{
+        display: flex;  
+    justify-content:center; /*align span inside div*/
+	
+    }
+
+    div#services-box.flex-container{
+  /*  border:2px solid blue!important; */
+    }
+
+    div#services-box.flex-container div{
+   /*        border:2px solid greenyellow;*/
+    }
+
+
+
+
+
+
+
+    .services-svg-box{
+    width: 150px;
+    height: 150px; 
+    background-color: rgb(2, 100, 111, 0.7); 
+    float:left;
+    margin-right: 50px; 
+    border-radius: 50%;
+    text-align: center;
+    color:#fff;    
+    position: relative;  /* needed because the child ul.services-list.center is flex, position absoltute*/
+    }   
+
+
+		.svg-size{    /* define size ICON-SVG  class aplied direct to <img> Note: for anchor links needed to .svg-size a */
+        height: 70px;
+        width: 70px;          
+      }
+	  
+	  
+
+      div.services-svg-box{
+        position:relative;
+        }
+        
+        
+      
+        
+        
+        .services-svg-box  h4{
+          position:absolute;
+          /* top: 50%!important; /* I hid */
+        /*  left: 50%; */
+         /* transform: translate(-50%, -50%); */
+	
+		   transform: translate(-50%, -50%); 
+		   left:50%;
+	
+           color:#fff;
+           font-weight: 400;
+           font-size:105% ;
+          letter-spacing: 1px;
+		 
+          }
+          
+            
+          .services-svg-box h4, .services-svg-box:nth-child(3n) h4{
+          top: 72%;
+        
+          }
+          
+          /*---- hover ----*/
+             
+        .services-svg-box:hover{
+            background-color: rgb(2, 100, 111, 0.93);  
+                   }
+           
+           .services-svg-box img:hover{
+            color:	#fff;	
+            color:rgba (255,255,255,0.3);
+                   }
+          
+           
+           .services-svg-box:hover, .services-svg-box img:hover{
+              -moz-transition: all 0.4s ease-in-out;
+             -o-transition: all 0.4s ease-in-out;
+             -ms-transition: all 0.4s ease-in-out;
+             transition: all 0.4s ease-in-out;
+                   } 
+                   
+        
+               /*services-svg-box h4:hover{
+                    color:	#02646E;	
+                    color:rgba (2,100,110,0.7);
+                
+                    }  */
+        
+        
+        /*---end of hover --*/
+
+       /* -- -End services +svg.mini -----*/
+
+       /* -- -section#about-----*/
+
+       /* button  */
+			.button{
+     		font-family: roboto;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -o-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            background: none;
+            border-radius: none;           
+            background-color:#02646E;
+            background-color:rgba (2,100,110,1);  
+			color:#fff;			
+            border-radius:50px;     
+            padding:0.7em 1.7em;	
+            letter-spacing: 1px;
+            text-align: center;
+            text-decoration: none;        
+            font-size: 1em; /* size icon + text*/
+            -moz-transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out;
+            -ms-transition: all 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
+        }
+                     
+			.button:hover{
+			opacity:0.82;
+			font-weight:400;					
+			}
+
+    
+		.cta-buttons{
+		display:inline-block!important;
+		 width:50%;
+        float:left;	
+		margin-top:20px;
+        margin-right:2%;
+		border: 1px solid blue;       			
+		}
+
+		.cta-buttons a{
+			margin-top:4px;
+		}
+		
+		.consultation{
+		background:#2e2e2e;	
+		color:#5abdbd;
+		}
+		
+		
+    /*--- TESTS-------*/
+.section-test{
+    height: 300px;
+  width: auto;
+}
+  
+
+/* end tests*/
+
+
+
+/*--- section#about--- */
+
+section#about div.one-third, section#about div.two-thirds{
+border: 1px solid aqua;
+} 
+
+ 
+section#about div.two-thirds{
+    margin-left: 0!important; /* to align <p> with h2 . it was taking margin from .two-thirds*/    
+    }
+
+/* section#about  img */
+#about .one-third img{
+    width:100%;
+    }
+
+    #about .one-third img:hover{
+        -webkit-filter: grayscale(0.7);
+        filter: grayscale(0.7);  /* efect Black and white*/
+    }
+        
+
+
+/* #image-message  peroperties to span */
+#image-message{
+    height: 80px;
+text-align: center;
+}
+
+#image-message i{
+font-size:170%;
+/* color:#4AAF52;  green */
+ color: rgb(2, 100, 111, 0.7); 
+
+    }   
+
+#image-message i:hover{
+ color:#fff;
+            }   
+
+#image-message:hover{           
+/* background-color:#2646F;  green  */
+  background-color: rgb(2, 100, 111, 0.93);
+}   
+      
+#image-message > span:hover{     
+    color:#fff;;    
+ 
+border: 1px solid salmon;
+        }   
+           
+#image-message:hover{
+
+    -moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+
+}
+
+/* section#about buttom */
+section#about a#button-about{
+    /* background:#f0f;*/
+    position:absolute;	
+    top:82%;
+    right:70%;
+    transform:translate(-50%,-50%);	
+ }
+
+
+/* END-- section#about--- */
+
+
+/*--- section#reviews--- */
+
+section#reviews .one-third{
+    border: 1px solid aqua;
+  
+    } 
+
+    
+section#reviews .one-third{
+    width:32.8%;       
+    margin-right:0%;
+     padding:0 0.5%; /* determinas padding entre imagens, se aplicar diretamente na img ela move p fora do box!*/
+    }
+   
+        
+
+
+    /* END-- section#reviews--- */
+
+    
+
+section#faq .one-third{
+    border: 1px solid aqua;
+    height: 100px;
+    /*display: flex; */
+    } 
+
+    section#faq {
+     
+        height: auto;
+     
+        margin:0;
+        } 
+
+        /* CLINIC Gallery*/
+
+        /* https://programmersportal.com/css/how-to/place-images-side-by-side-using-flexbox.php*/
+
+        .clinic-gallery{ /*parent*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        
+    
+        .column {  /*child*/
+        flex-basis:25%;
+        padding: 5px;
+        box-sizing: border-box;
+        }
+                
+
+          .column img{  /* Make image fit in the div */
+          width: 100%;
+
+          }
+
+          .column img:hover{
+            -webkit-filter: grayscale(0.7);
+            filter: grayscale(0.7);  /* efect Black and white*/
+        }
+            
+
+
+        /*  --section smiles  -----*/
+
+
+        .heading-text {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+          }
+          
+          .heading-text span {
+            font-weight: 100;
+          }
+
+          #heading-span-2 {
+            color:#02646F;
+          }
+          
+
+         /* Adjancent Sibling combinador funcionou somente com cor red, blue com cor# hexa nao, usei span#*/
+         /* span:first-of-type + span {
+            color: red;
+          }  */
+          
+        .container-smiles{
+            position:relative;		
+            }
+            
+            .container-smiles h3{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%); 
+            color:#fff;		
+            margin:0;
+            font-size:3em;
+            z-index:1;   /*se nao usar o z-index o texto  vai ficar meio entre da imagen*/
+            letter-spacing:3px;
+            text-transform:capitalize;  /*catilize: erste Bustabe immer groß, lowercase, uppercase, capitn*/
+            }
+            
+            
+            
+            
+            
+            ul.gallery-smiles{
+            list-style-type:none; 
+            overflow:hidden;
+            }
+            
+            ul.gallery-smiles li{
+            background-color:#000;
+            line-height:0;
+            /*Bild-Abstand unten zu Block-Element in HTML 5 beseitigen (REMOVE)*/
+            width:16.666666%;
+            float:left;
+            margin:0;
+            }
+            
+            
+            ul.gallery-smiles li img{
+            width:100%;
+            opacity:0.5;  /* Opacity 50% (Opacity aqui nada relacinado com IMG SOMENTE COR::rgb, e aparece parte da cor do background da galeria no caso preto background-color:#000 unten zu Block-Element in HTML 5 beseitigen (REMOVE)*/
+            webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+             -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out ;
+            
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);  /* efect Black and white*/
+                
+            }
+            
+            ul.gallery-smiles li img:hover{
+            opacity:1;  
+            
+             -webkit-filter: grayscale(0);
+            filter: grayscale(0);  /* efect Black and white*/
+            }
+
+
+
+
+        /*  --END  section smiles  -----*/
+
+
+        
+
+
+		
+		
+		
+
+
+
+        
+        /*------sub-page >> implants ------*/
+	section.implant-types{
+	height:120px;
+	background-color:rgb(2, 100,111, 1);
+    background-color:#02646E;
+	 position: relative;
+	 	}
+	
+	.center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	}
+
+	
+	.implant-bar ul li{
+    list-style-type:none;	
+    display:inline-block;      /* torna o bloco da  navigation  em um bloco-linha , diferente do display;block do Logo//*/	
+	padding: 35px 0;
+	}		
+		
+	.implant-bar a{
+    color:#fff;
+	padding: 0 20px;
+	}		
+		
+	.implant-bar a:hover{	
+		font-weight:500;
+		text-decoration: underline;
+		}
+		
+   .implant-types-active{
+	 font-weight:500; 
+   }
+/*--------------------------------*/	
+	
+	 /*--- section# IMPLANTS  BOX test --- */
+	 
+	section#implants .section-inner > div{
+	border: 1px solid green!important;
+	margin-left:-10px!important;		
+	}
+	
+	#implant-welcome{
+	margin-bottom:30px;
+	}
+	 
+	 section#implants p{      /* set space between paragraphs*/
+    line-height:26px;	
+   
+    }
+
+	 
+	.box-1{
+	  width:48%;
+      float:left;	
+      margin-right:1%;	
+     
+	}
+	 
+	 .box-2{
+	  width:48%;
+      float:left;	
+      margin-right:1%;	
+      border:1px solid blue;	  
+	}
+	 
+	#implants .box-1 img{
+    width:80%;
+    }
+	
+	#implant-container-1 .box-1 img{
+		width:100%;	
+		}
+	#implant-container-1{
+	margin-bottom:30px;
+	}		
+	
+	#implant-container-2 img{
+    width:100%;
+    }
+	
+
+	
+	#implant-container-2{
+    -webkit-filter: grayscale(1);
+        filter: grayscale(1);  /* efect Black and white*/
+	}
+	#implant-container-2:hover{
+    -webkit-filter: grayscale(0);
+        filter: grayscale(0);  
+	}
+	
+	/* --- cta dark--*/
+	
+	section.cta .section-inner *{   /*aplied to all its children*/
+	text-align:center;	    
+	}	
+	
+	section.cta .section-inner h3, section.cta.dark .section-inner p{   /*aplied to all its children*/
+     color:#fff;
+	}
+		
+	section.cta  .section-inner h3{   /*aplied to all its children*/
+	font-size:175%;
+	}
+	
+	section.cta .section-inner a{   /*aplied to all its children*/
+	  margin:15px 0px;
+	  position:relative;	 
+	}
+	
+		
+
+		 
+		 
+		 
+		 
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+        /* ----- footer -----*/
+      
+        
+            
+              footer{
+                  height: 200px;
+				 /* background-color:rgba(2,100,111,0.15); */
+				 background-color:#eee;
+                }
+        
+		
+        
+		
+		
+               footer div  h4{
+                text-transform:capitalize;   
+                font-weight:500;
+			
+               }
+            
+             
+                        
+                footer  span{
+                    font-size:90%;
+                       color:#454545;
+                        color:rgba(69, 69, 69, 1)
+                    }
+            
+			    
+				.wrapper{
+					width: 100%;
+					max-width: 960px;
+					margin: 0 auto;
+					
+				}
+						
+                #diepold-dental, #opening-hours, #policies{
+                width:28%;       
+                float:left;	                 
+                margin-right:2%;
+                border: 1px solid purple;
+               /* background-color:#fbfcfd; */
+                }
+        
+        
+            footer #diepold-dental ul li, footer #opening-hours ul li, footer #policies ul li {		
+                list-style-type:none!important;	
+                    }
+                
+                
+            footer #diepold-dental ul li:nth-child(2){		
+            margin-left:8%;	
+            }
+            
+        
+        
+        
+        footer a.logo-image img{  
+            width:35%;              /* properties with automatic center*/
+            display: inline-block;   
+            margin-left:0;
+            margin-right:7px;   
+           max-width: 20px; /* image size*/
+           float:left;
+          }
+        
+        span#logo-name-footer{
+           float:left;
+            font-size:90%; 
+            color:#5B9BA2;
+           }
+        
+            
+         #diepold-dental ul{
+            margin-top:25px;
+              }
+         
+         
+            
+              #opening-hours ul, #policies ul{
+                margin-top:5px;
+          }
+            
+             #opening-hours, #policies{
+                margin-top:0px;
+          }
+            
+            #diepold-dental i{
+            color:#5B9BA2;
+            margin-right:7px;   
+            }
+            
+        
+            
+
+
+
+
+
+
+
+
+
+/*- end drop down menu -*/
+		
+		
+		
+		
+		
